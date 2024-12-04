@@ -42,7 +42,7 @@ func deleteData(_ fileName: String) {
 
 struct ContentView: View {
     @State private var average: AverageDailyDataRecord?
-    @State private var fileName = "myData.json"
+    @State private var fileName = "average.json"
     
     var body: some View {
         VStack {
