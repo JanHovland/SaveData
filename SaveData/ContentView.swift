@@ -93,35 +93,3 @@ struct ContentView: View {
         }
     }
 }
-
-/*
- class FileManagerHelper {
- static let fileName = "myData.json"
- 
- static func save(data: AverageDailyDataRecord) {
- let url = getDocumentsDirectory().appendingPathComponent(fileName)
- let encoder = JSONEncoder()
- if let encoded = try? encoder.encode(data) {
- try? encoded.write(to: url)
- }
- }
- 
- static func load() -> AverageDailyDataRecord? {
- let url = getDocumentsDirectory().appendingPathComponent(fileName)
- if let data = try? Data(contentsOf: url) {
- let decoder = JSONDecoder()
- return try? decoder.decode(AverageDailyDataRecord.self, from: data)
- }
- return nil
- }
- 
- static func delete() {
- let url = getDocumentsDirectory().appendingPathComponent(fileName)
- try? FileManager.default.removeItem(at: url)
- }
- 
- private static func getDocumentsDirectory() -> URL {
- return FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
- }
- }
- */
